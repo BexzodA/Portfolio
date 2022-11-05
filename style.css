@@ -1,0 +1,179 @@
+/* * selects everything
+    box-sizng: border-box;
+    makes widh and height calculations take border and padding into account
+*/
+* {
+    box-sizing: border-box;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+html, body {
+    background-color:rgb(56,56,56);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.body-container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex: 1 0 auto;
+}
+
+.content.active {
+    display: flex;
+}
+
+#edge-desc {
+    font-size: 1.0vmin;
+    text-align: center;
+}
+
+#img-me {
+    height: 100%;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.img-container {
+    display: flex;   
+    flex-direction: column;
+    width: 25%;
+    height: 50%;
+    margin-left: 1.0vmin;
+}
+
+.content.about {
+    flex-flow: row;
+    font-size: 1vw;
+}
+
+.content {
+    display: none;
+    width: 65%;
+    background-color: rgb(46,46,46);
+    padding-top: 1.0vmin;
+}
+
+.about-txt {
+    padding: 1.0vmin;
+    width: 75%;
+}
+
+.icon {
+    width: 1.25vmin;
+    height: 1.25vmin;
+    border-radius: 1.0vmin;
+    border-color: white;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(36,36,36);
+    flex: 0 1 auto; 
+}
+
+.myname {
+    font-size: 2.5vmin;
+    padding: 1.0vmin;
+    color: white;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+    padding-left: 1.0vmin;
+    padding-right: 1.0vmin;
+}
+
+.navbar-links li a {
+    font-size: 2.5vmin;
+    padding: 1.0vmin;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: rgb(56,56,56);
+}
+
+.footer {
+    flex: 0 1 1.0rem;
+    background-color: rgb(36,36,36);
+}
+
+.social-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+}
+
+.social-links li a {
+    text-decoration: none;
+    font-size: 1.25vmin;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+    display: block;
+}
+
+.social-links li:hover {
+    background-color: rgb(56,56,56);
+}
+
+.hover-enlarge:hover {
+    transform: scale(1.25);
+    border-radius: 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    box-sizing:content-box;
+    width: 40px;
+}
+
+.small-text {
+    font-size: 1.0vmin;
+    text-align: center; 
+}
+
+.big {
+    width: 3.0vmin;
+    height: 3.0vmin;
+}
+
+
+@media (max-width: 600px) {
+    .img-container {
+        display: none;
+    }
+
+    .expand-on-mobile {
+        width: 100%;
+        flex: 1 0 auto;
+    }
+}
