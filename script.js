@@ -1,4 +1,6 @@
 window.onload = () => {
+    alert(`w: ${window.innerWidth} h: ${window.innerHeight}`);
+
     const content = [];
 
     const aboutLink = document.getElementsByClassName('about')[0];
